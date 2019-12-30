@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-success text-center">FORM VALIDATION</h1>
+    <div class="col-lg-8 m-auto d-block">
+        <form action="#" onsubmit="return validation()" class="bg-light">
+            <div class="form-grp">
+                <label>Username:</label>
+                <input type="text" name="user" class="form-control" id="user">
+                <span id="username" class="text-danger font-weight-bold"></span>
+            </div><br>
+
+            <div class="form-grp">
+                    <label>Password:</label>
+                    <input type="password" name="Password" class="form-control" id="password">
+                    <span id="pass" class="text-danger font-weight-bold"></span>
+                </div><br>
+                <div class="form-grp">
+                        <label>Confirm password:</label>
+                        <input type="password" name="conpassword" class="form-control" id="confrm">
+                        <span id="conpass" class="text-danger font-weight-bold"></span>
+                    </div><br>
+                    <div class="form-grp">
+                            <label>Mobile No:</label>
+                            <input type="password" name="mob" class="form-control" id="mob">
+                            <span id="Mobileno." class="text-danger font-weight-bold"></span>
+                        </div><br>
+                        <div class="email">
+                            <label>E-mail id:</label>
+                            <input type="text" name="mail" class="form-control" id="e-mails">
+                            <span id="E-mail" class="text-danger font-weight-bold"></span>
+                        </div><br>
+                        <input type="submit" name="submit" value="Submit" class="btn btn-success">
+                    
+
+        </form>
+
+    </div>
+    </div>
+
+    <script>
+        function validation(){
+            var user = document.getElementById("user").value;
+            var password = document.getElementById("password").value;
+            var confirmpassword = document.getElementById("confrm").value;
+            var Mobileno = document.getElementById("mob").value;
+            var  mail = document.getElementById("e-mails").value; 
+
+            if  (user== ""){
+                document.getElementById("username").innerHTML ="**please fill the user name";
+                return false;
+                }
+
+                if ((user.length <= 2) || (user.length > 20)) {
+                document.getElementById("username").innerHTML ="**The user name should be in between 2 and 20";
+                return false;
+            
+            }
+            if  (password== ""){
+                document.getElementById("pass").innerHTML ="**please fill the password";
+                return false;
+            }
+            if  (confirmpassword== ""){
+                document.getElementById("conpass").innerHTML ="**please confirm your password";
+                return false;
+            }
+            if  (Mobileno== ""){
+                document.getElementById("Mobileno.").innerHTML ="**please Enter your 10 digits mobile no.";
+                return false;
+            }
+            if  (mail== ""){
+                document.getElementById("E-mail").innerHTML ="**please Enter your valid E-mail id.";
+                return false;
+
+               
+                
+                
+                 
+
+            }
+            
+            
+            
+
+            
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>addition of two number is .....)!</h1>
+    <button onclick="addition()">addition</button>
+    <script>
+      function addition() {
+        num1 = prompt("entre the first no");
+        num2 = prompt("entre the second no");
+        sum = +num1 + +num2;
+        document.getElementById("add").innerHTML = sum;
+      }
+    </script>
+    <p id="add"></p>
+  </body>
+</html>

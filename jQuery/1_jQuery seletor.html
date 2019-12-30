@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, provident. 
+        Mollitia consectetur quaerat fugiat, quis autem voluptatum ipsa nesciunt, hic nisi 
+        repudiandae sint.Esse aliquid, quaerat nisi est vero accusamus.</p>
+
+        <h1 id="demo" style="background-color: red">this is the paragraph  hidden by id</h1>
+        <button onclick>click to hidden the paragraph</button>
+
+        <h2 class="menu" style="background-color: yellowgreen">THIS IS THE PARAGRAPH HIDDEN BY CLASs</h2>
+
+        <p class="menu1" style="background-color: aquamarine">THIS IS THE PARAGRAPH HIDDEN BY CLASS</p>
+
+        <ul>
+            <li style="background-color: darkgreen">SEVEN</li>
+            <li style="background-color: darkmagenta">MENTOR</li>
+        </ul>
+        <script>
+            
+       $(document).ready(function(){
+           $("button").click(function(){
+               $(".menu").hide()
+
+           });
+
+       });
+
+    
+
+    
+        </script>
+</body>
+</html>

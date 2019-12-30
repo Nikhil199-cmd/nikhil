@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>psuedo element in css</title>
+  </head>
+  <style>
+    p::first-letter {
+      background-color: yellow;
+      font-style: italic;
+    }
+
+    p::before {
+      content: "Read carefully  : ";
+      background-color: yellow;
+    }
+    p::after {
+      content: " written by Nikhil   : ";
+      background-color: fuchsia;
+    }
+    p::selection {
+      color: red;
+      background-color: aqua;
+    }
+  </style>
+  <body>
+    <h1>Lorem Ipsum</h1>
+    <P
+      >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptas
+      harum earum cupiditate. Neque suscipit, accusantium molestiae ab iste
+      quasi esse culpa labore blanditiis, enim optio libero atque id!
+      Deleniti.</P
+    >
+  </body>
+</html>

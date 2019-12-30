@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h5{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h5>clousre is the inner function that can access the outer function</h5>
+    
+</body>
+<script>
+    function outer(){
+        var a = "ASDFGHJKL"
+        document.write(a +"<br>");
+
+        function inner (){
+            var b = "asdfghjkl"
+            document.write(b +"<br>");
+            document.write(a);
+        }
+        inner();
+    }
+    outer();
+</script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>transperant menu</title>
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+        background-size: cover;
+      }
+      .dropmenu1 {
+        width: 90%;
+        height: 100px;
+        margin: 0px auto;
+      }                     Q
+      .dropmenu1 ul {
+        padding: 0px;
+      }
+      .dropmenu1 ul li {
+        list-style-type: none;
+        float: left;
+        background-color: black;
+        color: cornsilk;
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        opacity: 0.6;
+      }
+
+      .dropmenu1 ul li ul {
+        display: none;
+      }
+      .dropmenu1 ul li:hover > ul {
+        display: block;
+      }
+      .dropmenu1 ul li :hover {
+        background-color: rgb(255, 0, 157);
+        opacity: 0.9;
+      }
+      .dropmenu1 ul li ul li {
+        position: relative;
+      }
+      .dropmenu1 ul li ul li ul {
+        position: absolute;
+        left:200px;
+        top:0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropmenu1">
+      <ul>
+        <li>
+          USA
+          <ul>
+            <li>America</li>
+            <li>whitehouse</li>
+            <li>D0nald trump</li>
+          </ul>
+        </li>
+        <li>
+          INDIA
+          <ul>
+            <li>Pune</li>
+            <li>Mumbai</li>
+            <li>
+              Delhi
+              <ul>
+                <li>Red fort</li>
+                <li>kutub minar</li>
+              </ul>
+            </li>
+            <li>Dehradhun</li>
+            <li>Surat</li>
+          </ul>
+        </li>
+        <li>
+          AUS
+          <ul>
+            <li>Melbourn</li>
+            <li>Sydney</li>
+          </ul>
+        </li>
+        <li>
+          ENGLAND
+          <ul>
+            <li>Lords</li>
+            <li>Mancestre</li>
+            <li>old traffred</li>
+            <li>Edgsbaston</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

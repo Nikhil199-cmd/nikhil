@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+     <p style="text-decoration: underline";;>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id aut sunt voluptatum magnam nihil. 
+         Praesentium voluptatem quibusdam saepe nobis harum culpa accusamus suscipit dolor,
+          molestias corporis quod nihil, sequi eius.</p>
+
+          <button onclick> click on me </button>
+          <script>
+              $(document).ready(function(){
+                  $("button").click (function(){
+                      $("p").css({
+                        "text-decoration":"none",
+                        "background-color": "yellow",
+                        "color":"red"
+                      })
+
+                  });
+
+              });
+// USE "a":"b", FOR MULTIPLE CSS IN JQuery
+          </script>
+         
+</body>
+</html>
